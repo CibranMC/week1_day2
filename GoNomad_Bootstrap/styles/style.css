@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.home-card:hover {
+    transform: scale(1.05);
+}
+
+.home-card:hover .card-body {
+    display: none;
+}
+
+.card-body {
+    font-size: 2.3em;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.pic1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/aayush-gupta-ljhCEaHYWJ8-unsplash.jpg');
+}
+
+.pic1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/aayush-gupta-ljhCEaHYWJ8-unsplash.jpg');
+}
+
+.pic2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/reiseuhu-SsiI4iw2Gx0-unsplash.jpg');
+}
+
+.pic2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/reiseuhu-SsiI4iw2Gx0-unsplash.jpg');
+}
+
+.pic3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hert-niks-S7QZcYLJJsA-unsplash.jpg');
+}
+
+.pic3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/hert-niks-S7QZcYLJJsA-unsplash.jpg');
+}
+
+.pic4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cassie-gallegos-6wCWCPwmRJY-unsplash.jpg');
+}
+
+.pic4:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/cassie-gallegos-6wCWCPwmRJY-unsplash.jpg');
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/coolplace.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.buy-button {
+    border: 1px solid white;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}

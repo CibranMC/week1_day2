@@ -1,0 +1,217 @@
+@import url('http://fonts.cdnfonts.com/css/d-din?styles=37957');
+@import url('http://fonts.cdnfonts.com/css/d-din');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'D-DIN', sans-serif;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background: url('../images/spaceXRocket.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 100px;
+    padding: 0 50px;
+}
+
+.nav-list {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list li {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-list a {
+    text-decoration: underline 1px rgba(0, 0, 0, 0);
+    text-underline-offset: 0.4em;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+.spacex-logo {
+    width: 210px;
+    margin-bottom: 10px;
+}
+
+/* SPACEX SMALL LOGO */
+
+/* .spacex-small-logo {
+    width: 250px;
+    padding-top: 5%;
+    display: block;
+    margin: 0 auto;
+} */
+
+.burger {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* LEARN MORE SECTION */
+
+.learn-more {
+    width: 350px;
+    margin: 150px 0 0 50px
+}
+
+.learn-more h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    line-height: 98%;
+}
+
+.learn-more a {
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 20px;
+    width: 130px;
+    text-align: center;
+    display: block;
+    transition: 0.5s;
+}
+
+.learn-more a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    height: 15vh;
+}
+
+.footer nav {
+    height: 100%;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-menu li {
+    font-size: 12px;
+    margin: 0 20px;
+}
+
+.footer-menu a {
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #979797;
+}
+
+.footer-menu span {
+    color: #979797;
+    font-weight: 400;
+}
+
+.footer-menu-small {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* NAVBAR AND LEARN MORE QUERIES */
+
+@media (max-width: 870px) {
+    .nav-list {
+        display: none;
+    }
+
+    .spacex-small-logo {
+        width: 250px;
+        padding-top: 5%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .learn-more {
+        width: 400px;
+        margin: 100px auto;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .learn-more h2 {
+        line-height: 1.2em;
+    }
+
+    .learn-more a {
+        margin: 0 auto;
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 0, 0, 0.2)), url('../images/spaceXRocket.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 85vh;
+    }
+}
+
+/* FOOTER QUERIES */
+
+@media (max-width: 670px) {
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-menu-small {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .footer-menu-small i {
+        font-size: 1.5em;
+        transition: 0.5s;
+    }
+
+    .footer-menu-small i:hover {
+        transform: scale(1.5);
+    }
+}
+
+/* SMALL LOGO QUERIES */
+
+@media (min-width: 870px) {
+    .spacex-small-logo {
+        display: none;
+    }
+}
